@@ -374,7 +374,7 @@ const I18N = {
       "個人データの販売は行いません。"
     ],
     retention_title: "保管期間",
-    retention_body: "本ポリシーに定める目的達成に必要な期間のみ情報を保管し、その後は削除または匿名化します。集計・匿名化データはより長期間保管される場合があります。",
+    retention_body: "本ポリシーに定める目的達成に必要な期間のみ情報を保管し、その後は删除または匿名化します。集計・匿名化データはより長期間保管される場合があります。",
     permissions_title: "アプリの権限",
     permissions_list: [
       "カメラ：通貨額の光学的リアルタイム認識に必要。",
@@ -418,17 +418,17 @@ const I18N = {
       "카메라 접근: 실시간 통화(通貨) 인식을 위해 사용되며, 처리는 디바이스 내에서 이루어집니다. 사용자가 명시적으로 공유하지 않는 한 이미지는 업로드되지 않습니다.",
       "사진 보관함 접근: 사용자가 이미지를 선택한 경우에만 사용되며, 처리는 디바이스 내에서 이루어집니다.",
       "크래시 로그 및 진단 정보: 안정성 유지를 위해 수집.",
-      "광고 식별자(IDFA): App Tracking Transparency(ATT)에 동의한 경우에만 사용하며, 그 외에는 문맥 기반의 비개인화 광고를 제공합니다.",
+      "광고 식별자(IDFA): App Tracking Transparency(ATT)에 동의한 경우에만 사용하며, 그 외에는 문맥 기반의 비개인화 광고를 제공합니다。",
       "정확한 위치 정보는 수집하지 않습니다."
     ],
     use_title: "정보 이용 목적",
     use_list: [
       "핵심 기능 제공(환율 조회, 환산, 실시간 카메라 인식).",
       "성능 및 안정성 최적화(예: 환율 캐시, 카메라 파이프라인 워밍업).",
-      "기능/UX 개선을 위한 집계 분석.",
-      "사용자 허용 시 광고 개인화 및 효과 측정.",
-      "사기/남용 방지 및 법규 준수.",
-      "중요 업데이트 사항 안내."
+      "기능/UX 개선을 위한 집계 분석。",
+      "사용자 허용 시 광고 개인화 및 효과 측정。",
+      "사기/남용 방지 및 법규 준수。",
+      "중요 업데이트 사항 안내。"
     ],
     share_title: "정보 공유 및 공개",
     share_list: [
@@ -766,7 +766,7 @@ const I18N = {
       "เครือข่าย: สำหรับดึงอัตราแลกเปลี่ยนและแสดงโฆษณา"
     ],
     tracking_title: "การติดตามและโฆษณา (ATT)",
-    tracking_body: "เราอาจขอสิทธิ์ ATT เพื่อเข้าถึง IDFA สำหรับโฆษณาที่รบกวนน้อยและเกี่ยวข้องมากขึ้น คุณสามารถปรับเปลี่ยนได้ตลอดเวลาในการตั้งค่า iOS",
+    tracking_body: "เราอาจขอสิทธิ์ ATT เพื่อเข้าถึง IDFA สำหรับโฆษณาที่รบกวน้อยและเกี่ยวข้องมากขึ้น คุณสามารถปรับเปลี่ยนได้ตลอดเวลาในการตั้งค่า iOS",
     rights_title: "สิทธิและทางเลือกของคุณ",
     rights_list: [
       "ขอเข้าถึง แก้ไข หรือขอลบข้อมูล ตามกฎหมายที่เกี่ยวข้อง",
@@ -779,7 +779,7 @@ const I18N = {
     security_title: "ความปลอดภัย",
     security_body: "เราใช้มาตรการความปลอดภัยตามมาตรฐานอุตสาหกรรม แต่อาจไม่สามารถรับประกันความปลอดภัยได้ 100%",
     transfer_title: "การโอนข้อมูลระหว่างประเทศ",
-    transfer_body: "ข้อมูลของคุณอาจถูกประมวลผลนอกประเทศที่คุณอาศัย เราจะคุ้มครองตามกฎหมายที่บังคับใช้",
+    transfer_body: "ข้อมูลของคุณอาจถูกประมวลผลนอกประเทศที่你อาศัย เราจะคุ้มครองตามกฎหมายที่บังคับใช้",
     changes_title: "การเปลี่ยนแปลงนโยบาย",
     changes_body: "เราอาจปรับปรุงนโยบายนี้เป็นระยะ หากมีการเปลี่ยนแปลงสำคัญจะแจ้งให้ทราบภายในแอปหรือช่องทางที่เหมาะสม",
     contact_title: "ติดต่อเรา",
@@ -1044,20 +1044,42 @@ const I18N = {
   }
 };
 
+/* ========= Fragment <-> I18N key 轉換 ========= */
+// 把 URL 的 #fragment 轉成 I18N key（大小寫不敏感、支援底線）
+function fragmentToKey(hash){
+  const h = (hash || "").replace(/^#/, "").trim().toLowerCase().replace("_","-");
+  if(!h) return "";
+  if(h === "zh-hant" || h === "zh-tw" || h === "zh-hk" || h === "zh-mo") return "zh-Hant";
+  if(h === "zh-hans" || h === "zh-cn" || h === "zh-sg" || h === "zh") return "zh-Hans";
+  if(h === "pt" || h === "pt-br" || h === "pt-pt") return "pt";
+  if(h === "es" || h === "es-419" ) return "es";
+  if(h === "ar" || h === "ar-sa") return "ar";
+  // 其它語言：直接用同名（小寫 → I18N key）
+  const map = { en:"en", ja:"ja", ko:"ko", fr:"fr", de:"de", th:"th", id:"id", ru:"ru", vi:"vi" };
+  return map[h] ? map[h] : "";
+}
+
+// 把 I18N key 轉成 fragment（統一小寫 dashed）
+function keyToFragment(key){
+  if(key === "zh-Hant") return "zh-hant";
+  if(key === "zh-Hans") return "zh-hans";
+  return String(key || "en").toLowerCase();
+}
+
 /** ====== Helpers: render text & lists ====== */
-function setLanguage(lang){
-  const map = {
-    "zh-TW":"zh-Hant","zh-HK":"zh-Hant","zh-MO":"zh-Hant",
-    "zh":"zh-Hans","zh-CN":"zh-Hans","zh-SG":"zh-Hans",
-    "pt-BR":"pt","pt-PT":"pt","es-419":"es","ar-SA":"ar"
-  };
-  lang = map[lang] || lang;
-  if(!I18N[lang]) lang = "en";
-  const t = I18N[lang];
+function setLanguage(input){
+  // 允許傳入 I18N key 或 fragment
+  let key = "";
+  if(I18N[input]) key = input;
+  else {
+    const fromFrag = fragmentToKey(input);
+    key = I18N[fromFrag] ? fromFrag : "en";
+  }
+  const t = I18N[key];
 
   // dir for Arabic
-  document.documentElement.lang = lang;
-  document.documentElement.dir = (lang === "ar") ? "rtl" : "ltr";
+  document.documentElement.lang = key;
+  document.documentElement.dir = (key === "ar") ? "rtl" : "ltr";
 
   // text nodes
   const ids = [
@@ -1083,11 +1105,11 @@ function setLanguage(lang){
     ["permissions_list","permissions_list"],
     ["rights_list","rights_list"]
   ];
-  lists.forEach(([id,key])=>{
+  lists.forEach(([id,keyName])=>{
     const el = document.getElementById(id);
     if(!el) return;
     el.innerHTML = "";
-    (t[key] || []).forEach(item=>{
+    (t[keyName] || []).forEach(item=>{
       const li = document.createElement("li");
       li.innerHTML = item;
       el.appendChild(li);
@@ -1096,22 +1118,49 @@ function setLanguage(lang){
 
   // update select value without firing change loop
   const select = document.getElementById("lang");
-  if(select.value !== lang) select.value = lang;
+  if(select && select.value !== key) select.value = key;
+
+  // 寫回 URL fragment（不跳頁）
+  const frag = keyToFragment(key);
+  if(location.hash.replace(/^#/,'') !== frag){
+    const url = new URL(location.href);
+    url.hash = frag;
+    history.replaceState(null, "", url); // 無重新載入
+  }
 }
 
 (function init(){
-  // populate default UI
-  setLanguage("en");
-  // pick best language from browser
-  const navLangs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || "en"];
-  for(const l of navLangs){
-    const base = l.split("-")[0];
-    const candidates = [l, base === "zh" ? "zh-Hans" : base];
-    const found = candidates.find(c => I18N[c]);
-    if(found){ setLanguage(found); break; }
+  // 1) 先看 URL #fragment
+  const fromHash = fragmentToKey(location.hash);
+  if(fromHash){ setLanguage(fromHash); }
+  else {
+    // 2) 沒 fragment 才依瀏覽器語言
+    const navLangs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || "en"];
+    let chosen = "en";
+    const mapZHCandidate = l => {
+      const low = (l || "").toLowerCase();
+      if(low.startsWith("zh-")) return (low.includes("tw") || low.includes("hk") || low.includes("mo")) ? "zh-Hant" : "zh-Hans";
+      return l.split("-")[0];
+    };
+    for(const l of navLangs){
+      const cand1 = fragmentToKey(l);   // 支援多種寫法
+      const cand2 = mapZHCandidate(l);  // 強化中文判斷
+      if(I18N[cand1]) { chosen = cand1; break; }
+      if(I18N[cand2]) { chosen = cand2; break; }
+    }
+    setLanguage(chosen);
   }
-  // wire selector
-  document.getElementById("lang").addEventListener("change", e => setLanguage(e.target.value));
+
+  // 3) 手動切換語言 → 也更新 fragment
+  document.getElementById("lang").addEventListener("change", e => {
+    setLanguage(e.target.value); // 內部會寫回 fragment
+  });
+
+  // 4) 使用者手動改 fragment（例如外部連到 #ko）→ 監聽同步
+  window.addEventListener("hashchange", () => {
+    const key = fragmentToKey(location.hash);
+    if(key) setLanguage(key);
+  });
 })();
 </script>
 </body>
