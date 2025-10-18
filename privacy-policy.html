@@ -1,0 +1,1118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CurrencyGo – Privacy Policy</title>
+<style>
+  :root{
+    --bg:#ffffff; --text:#111; --muted:#555; --card:#f6f7f9; --accent:#2563eb;
+    --border:#e6e8ec;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#0b0c0f; --text:#f4f6fb; --muted:#b8bdc9; --card:#12141a; --accent:#5393ff; --border:#232531; }
+  }
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";}
+  .wrap{max-width:980px;margin:0 auto;padding:24px;}
+  header{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-bottom:16px}
+  h1{font-size:26px;line-height:1.25;margin:0}
+  .lang{margin-left:auto}
+  select{appearance:none;border:1px solid var(--border);background:var(--card);color:var(--text);padding:8px 12px;border-radius:10px}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin:12px 0}
+  h2{font-size:18px;margin:0 0 8px}
+  p{margin:8px 0}
+  ul{margin:8px 0 0 18px;padding:0}
+  li{margin:6px 0}
+  .muted{color:var(--muted)}
+  footer{margin:22px 0 8px;color:var(--muted);font-size:13px}
+  .badge{display:inline-block;background:var(--accent);color:#fff;border-radius:999px;padding:2px 10px;font-size:12px;margin-left:8px}
+  .hdr-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .kv{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+  .kv span{white-space:nowrap}
+  /* RTL support for Arabic */
+  [dir="rtl"] .wrap{direction:rtl}
+  [dir="rtl"] ul{margin:8px 18px 0 0}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hdr-row">
+    <h1 id="title">Privacy Policy</h1>
+    <span id="appBadge" class="badge">CurrencyGo</span>
+    <div class="lang">
+      <label for="lang" class="muted" id="langLabel">Language</label>
+      <select id="lang" aria-label="Language">
+        <option value="en">English</option>
+        <option value="zh-Hant">繁體中文</option>
+        <option value="zh-Hans">简体中文</option>
+        <option value="ja">日本語</option>
+        <option value="ko">한국어</option>
+        <option value="es">Español</option>
+        <option value="pt">Português</option>
+        <option value="fr">Français</option>
+        <option value="de">Deutsch</option>
+        <option value="th">ไทย</option>
+        <option value="id">Bahasa Indonesia</option>
+        <option value="ru">Русский</option>
+        <option value="vi">Tiếng Việt</option>
+        <option value="ar">العربية</option>
+      </select>
+    </div>
+    <div class="kv">
+      <span class="muted" id="lastUpdatedLabel">Last updated:</span>
+      <span id="lastUpdatedValue">2025-10-18</span>
+    </div>
+  </header>
+
+  <section class="card">
+    <h2 id="intro_title">Introduction</h2>
+    <p id="intro_body"></p>
+  </section>
+
+  <section class="card">
+    <h2 id="scope_title">Scope</h2>
+    <p id="scope_body"></p>
+  </section>
+
+  <section class="card">
+    <h2 id="collect_title">Information We Collect</h2>
+    <ul id="collect_list"></ul>
+  </section>
+
+  <section class="card">
+    <h2 id="use_title">How We Use Information</h2>
+    <ul id="use_list"></ul>
+  </section>
+
+  <section class="card">
+    <h2 id="share_title">Sharing & Disclosure</h2>
+    <ul id="share_list"></ul>
+  </section>
+
+  <section class="card">
+    <h2 id="retention_title">Data Retention</h2>
+    <p id="retention_body"></p>
+  </section>
+
+  <section class="card">
+    <h2 id="permissions_title">App Permissions</h2>
+    <ul id="permissions_list"></ul>
+  </section>
+
+  <section class="card">
+    <h2 id="tracking_title">Tracking & Advertising (ATT)</h2>
+    <p id="tracking_body"></p>
+  </section>
+
+  <section class="card">
+    <h2 id="rights_title">Your Choices & Rights</h2>
+    <ul id="rights_list"></ul>
+  </section>
+
+  <section class="card">
+    <h2 id="children_title">Children’s Privacy</h2>
+    <p id="children_body"></p>
+  </section>
+
+  <section class="card">
+    <h2 id="security_title">Security</h2>
+    <p id="security_body"></p>
+  </section>
+
+  <section class="card">
+    <h2 id="transfer_title">International Transfers</h2>
+    <p id="transfer_body"></p>
+  </section>
+
+  <section class="card">
+    <h2 id="changes_title">Changes to This Policy</h2>
+    <p id="changes_body"></p>
+  </section>
+
+  <section class="card">
+    <h2 id="contact_title">Contact Us</h2>
+    <p id="contact_body"></p>
+  </section>
+
+  <footer id="footer">© 2025 CurrencyGo. All rights reserved.</footer>
+</div>
+
+<script>
+/** ====== Configure these two values for your app ====== */
+const APP_NAME = "CurrencyGo";                    // ← TODO: change if needed
+const CONTACT_EMAIL = "support@example.com";      // ← TODO: change to your contact
+const LAST_UPDATED_ISO = "2025-10-18";            // ← Update when you change content
+
+/** ====== i18n strings ====== */
+const I18N = {
+  en: {
+    title: "Privacy Policy",
+    langLabel: "Language",
+    lastUpdatedLabel: "Last updated:",
+    intro_title: "Introduction",
+    intro_body: `${APP_NAME} (“App”, “we”, “us”) is committed to protecting your privacy. This Policy explains how we collect, use, share, and safeguard information when you use the App. By using ${APP_NAME}, you agree to this Policy.`,
+    scope_title: "Scope",
+    scope_body: `This Policy applies to the ${APP_NAME} iOS application and any in-app features or content. It does not cover third-party websites or services that may be linked from the App.`,
+    collect_title: "Information We Collect",
+    collect_list: [
+      "Device information (e.g., device model, OS version, language, time zone).",
+      "App usage data (interactions, screens viewed, feature usage) in aggregate form.",
+      "Camera access for real-time currency recognition; processing occurs on-device. Images are not uploaded unless you explicitly choose to share.",
+      "Photo library access only when you pick an image for analysis; processing occurs on-device.",
+      "Crash logs and diagnostics to maintain stability.",
+      "Advertising identifier (IDFA) only if you grant App Tracking Transparency permission; otherwise we use contextual, non-personalized ads.",
+      "We do not collect precise location data."
+    ],
+    use_title: "How We Use Information",
+    use_list: [
+      "Provide core functionality (exchange-rate retrieval, conversions, and live camera recognition).",
+      "Optimize performance and reliability (e.g., caching rates, pre-warming camera pipeline).",
+      "Analyze usage in aggregate to improve features and UX.",
+      "Personalize and measure advertising where permitted by you.",
+      "Prevent fraud and abuse, and ensure legal compliance.",
+      "Communicate important updates about the App."
+    ],
+    share_title: "Sharing & Disclosure",
+    share_list: [
+      "Service providers (e.g., analytics and advertising networks) under contractual safeguards.",
+      "Legal obligations or to protect rights, safety, and integrity.",
+      "Business transfers (e.g., merger, acquisition, or asset sale).",
+      "We do not sell personal data."
+    ],
+    retention_title: "Data Retention",
+    retention_body: "We retain information only for as long as necessary to fulfill the purposes outlined in this Policy, then delete or anonymize it. Aggregated and anonymized data may be kept for longer.",
+    permissions_title: "App Permissions",
+    permissions_list: [
+      "Camera: required for live optical recognition of currency amounts.",
+      "Photo Library: optional, to analyze images you select.",
+      "Network: to fetch exchange-rate data and deliver ads."
+    ],
+    tracking_title: "Tracking & Advertising (ATT)",
+    tracking_body: "Where available, we may request App Tracking Transparency (ATT) permission to access the IDFA for less intrusive and more relevant ads. You can change this at any time in iOS Settings.",
+    rights_title: "Your Choices & Rights",
+    rights_list: [
+      "Access, correction, or deletion of your information, subject to applicable laws.",
+      "Opt-out of personalized advertising by declining ATT or adjusting ad preferences.",
+      "Withdraw consent and disable permissions in iOS Settings.",
+      "Contact us for questions or requests about your data."
+    ],
+    children_title: "Children’s Privacy",
+    children_body: `${APP_NAME} is not directed to children under the age required by local law (e.g., 13 or 16). We do not knowingly collect personal data from children.`,
+    security_title: "Security",
+    security_body: "We use industry-standard safeguards to protect information. However, no method of transmission or storage is 100% secure.",
+    transfer_title: "International Transfers",
+    transfer_body: "Your information may be processed in countries other than your own. We take steps to ensure appropriate protections in accordance with applicable laws.",
+    changes_title: "Changes to This Policy",
+    changes_body: "We may update this Policy from time to time. Material changes will be highlighted within the App or via other appropriate means.",
+    contact_title: "Contact Us",
+    contact_body: `If you have questions about privacy or this Policy, contact us at <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>.`,
+    footer: `© 2025 ${APP_NAME}. All rights reserved.`
+  },
+
+  "zh-Hant": {
+    title: "隱私權政策",
+    langLabel: "語言",
+    lastUpdatedLabel: "最後更新：",
+    intro_title: "簡介",
+    intro_body: `${APP_NAME}（下稱「本 App」或「我們」）重視您的隱私。本政策說明我們如何蒐集、使用、分享與保護您的資料。當您使用本 App，即表示同意本政策內容。`,
+    scope_title: "適用範圍",
+    scope_body: `本政策適用於 ${APP_NAME} iOS 應用程式及應用內功能與內容，不包含 App 可能連結的第三方網站或服務。`,
+    collect_title: "我們蒐集的資料",
+    collect_list: [
+      "裝置資訊（例如裝置型號、作業系統版本、語言、時區）。",
+      "App 使用資料（互動行為、瀏覽頁面、功能使用頻率），以彙整形式分析。",
+      "相機存取：用於即時幣值辨識；處理在裝置端進行。除非您主動分享，影像不會上傳。",
+      "相片資料庫存取：僅在您挑選相片進行分析時使用；處理在裝置端進行。",
+      "當機記錄與診斷資訊，用於維持穩定性。",
+      "廣告識別碼（IDFA）：僅在您同意 App 追蹤透明度（ATT）授權後使用；否則僅提供情境式、非個人化廣告。",
+      "我們不蒐集精確定位資料。"
+    ],
+    use_title: "資料使用方式",
+    use_list: [
+      "提供核心功能（匯率取得、換算與相機即時辨識）。",
+      "優化效能與穩定性（例如匯率快取、相機流程預熱）。",
+      "以彙整方式分析使用情形，改進功能與體驗。",
+      "在您允許的情況下，個人化與成效衡量廣告。",
+      "防止詐欺與濫用，並符合法規要求。",
+      "就重要更新事項與您溝通。"
+    ],
+    share_title: "資料分享與揭露",
+    share_list: [
+      "服務供應商（如分析與廣告網路），並以契約保障資料處理安全。",
+      "基於法令義務、權利保護、安全與系統完整性之必要。",
+      "企業交易（如合併、收購或資產移轉）。",
+      "我們不販售個人資料。"
+    ],
+    retention_title: "保存期間",
+    retention_body: "我們僅於達成本政策所述目的之必要期間內保存資料；之後會刪除或匿名化。彙整或匿名化資料可能會保存較久。",
+    permissions_title: "App 權限",
+    permissions_list: [
+      "相機：用於幣值文字的即時光學辨識。",
+      "相片資料庫：供您選擇相片進行分析（選用）。",
+      "網路：用於取得匯率資料與投放廣告。"
+    ],
+    tracking_title: "追蹤與廣告（ATT）",
+    tracking_body: "在可用的裝置上，我們可能請求 App 追蹤透明度（ATT）授權，以使用 IDFA 提供更少打擾且更相關的廣告。您可隨時於 iOS「設定」變更。",
+    rights_title: "您的選擇與權利",
+    rights_list: [
+      "依適用法規，要求存取、更正或刪除您的資料。",
+      "拒絕個人化廣告：不同意 ATT 或調整廣告偏好。",
+      "撤回同意並在 iOS「設定」關閉權限。",
+      "就資料相關問題透過聯絡方式與我們聯繫。"
+    ],
+    children_title: "兒少隱私",
+    children_body: `${APP_NAME} 並非以法規所定年齡（例如 13 或 16 歲）以下之兒童為對象，我們不會明知蒐集兒童個人資料。`,
+    security_title: "安全性",
+    security_body: "我們採用業界標準的安全措施保護資料，但任何傳輸或儲存方式皆無法保證百分之百安全。",
+    transfer_title: "跨境傳輸",
+    transfer_body: "您的資料可能於您所在國家以外的地區處理。我們會依適用法令採取合理保護措施。",
+    changes_title: "政策變更",
+    changes_body: "本政策可能不定期更新；重大變更將於 App 內或其他適當方式提示。",
+    contact_title: "聯絡我們",
+    contact_body: `若對隱私或本政策有任何疑問，請透過 <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a> 與我們聯繫。`,
+    footer: `© 2025 ${APP_NAME} 版權所有`
+  },
+
+  "zh-Hans": {
+    title: "隐私政策",
+    langLabel: "语言",
+    lastUpdatedLabel: "最后更新：",
+    intro_title: "简介",
+    intro_body: `${APP_NAME}（下称“本 App”或“我们”）重视您的隐私。本文说明我们如何收集、使用、共享与保护您的信息。使用本 App 即表示您同意本政策。`,
+    scope_title: "适用范围",
+    scope_body: `本政策适用于 ${APP_NAME} iOS 应用及应用内功能与内容，不包含 App 可能链接的第三方网站或服务。`,
+    collect_title: "我们收集的信息",
+    collect_list: [
+      "设备信息（如设备型号、系统版本、语言、时区）。",
+      "App 使用数据（交互行为、浏览页面、功能使用频率），以汇总形式分析。",
+      "相机访问：用于实时币值识别；处理在本地设备进行。除非您主动分享，图像不会上传。",
+      "相册访问：仅在您选择图片进行分析时使用；处理在本地设备进行。",
+      "崩溃日志与诊断信息，用于维持稳定性。",
+      "广告标识符（IDFA）：仅在您同意 App 跟踪透明度（ATT）授权后使用；否则仅提供情境式、非个性化广告。",
+      "我们不收集精确位置信息。"
+    ],
+    use_title: "信息的使用方式",
+    use_list: [
+      "提供核心功能（汇率获取、换算与相机实时识别）。",
+      "优化性能与稳定性（如汇率缓存、相机流程预热）。",
+      "以汇总方式分析使用情况，改进功能与体验。",
+      "在您允许的情况下，个性化与效果衡量广告。",
+      "防止欺诈与滥用，并符合法律要求。",
+      "就重要更新事项与您沟通。"
+    ],
+    share_title: "信息共享与披露",
+    share_list: [
+      "服务提供商（如分析与广告网络），并通过合同保障数据处理安全。",
+      "基于法律义务、权利保护、安全与系统完整性的需要。",
+      "企业交易（如合并、收购或资产转让）。",
+      "我们不出售个人数据。"
+    ],
+    retention_title: "保存期限",
+    retention_body: "我们仅在达成本政策所述目的所必要的期限内保存信息；之后将删除或匿名化。汇总或匿名化数据可能会保存更久。",
+    permissions_title: "应用权限",
+    permissions_list: [
+      "相机：用于币值文字的实时光学识别。",
+      "相册：供您选择图片进行分析（可选）。",
+      "网络：用于获取汇率数据与投放广告。"
+    ],
+    tracking_title: "跟踪与广告（ATT）",
+    tracking_body: "在可用的设备上，我们可能请求 App 跟踪透明度（ATT）授权，以使用 IDFA 提供更少打扰且更相关的广告。您可随时在 iOS“设置”中更改。",
+    rights_title: "您的选择与权利",
+    rights_list: [
+      "根据适用法律，要求访问、更正或删除您的信息。",
+      "拒绝个性化广告：不同意 ATT 或调整广告偏好。",
+      "撤回同意并在 iOS“设置”中关闭权限。",
+      "就数据相关问题通过联系方式与我们沟通。"
+    ],
+    children_title: "未成年人隐私",
+    children_body: `${APP_NAME} 并非面向法律所规定年龄（如 13 或 16 岁）以下的未成年人，我们不会明知收集未成年人的个人信息。`,
+    security_title: "安全性",
+    security_body: "我们采用业界标准的安全措施保护信息，但任何传输或存储方式都无法保证百分之百安全。",
+    transfer_title: "跨境传输",
+    transfer_body: "您的信息可能在您所在国家/地区以外被处理。我们将根据适用法律采取合理的保护措施。",
+    changes_title: "政策变更",
+    changes_body: "本政策可能不时更新；重大变更将通过 App 内或其他适当方式提示。",
+    contact_title: "联系我们",
+    contact_body: `如对隐私或本政策有任何疑问，请发送邮件至 <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>。`,
+    footer: `© 2025 ${APP_NAME} 保留所有权利`
+  },
+
+  ja: {
+    title: "プライバシーポリシー",
+    langLabel: "言語",
+    lastUpdatedLabel: "最終更新日：",
+    intro_title: "はじめに",
+    intro_body: `${APP_NAME}（以下、「本アプリ」または「当社」）は、ユーザーのプライバシー保護に努めています。本ポリシーは、本アプリの利用時における情報の収集・利用・共有・保護について説明します。ご利用により、本ポリシーに同意したものとみなされます。`,
+    scope_title: "適用範囲",
+    scope_body: `本ポリシーは iOS 版 ${APP_NAME} およびアプリ内の機能・コンテンツに適用されます。アプリからリンクされる第三者サイトやサービスは対象外です。`,
+    collect_title: "収集する情報",
+    collect_list: [
+      "端末情報（端末モデル、OS バージョン、言語、タイムゾーン等）。",
+      "アプリの利用状況データ（操作、閲覧画面、機能の利用頻度）※集計ベース。",
+      "カメラアクセス：リアルタイム通貨認識のため。処理は端末上で実行されます。ユーザーが明示的に共有しない限り、画像はアップロードされません。",
+      "写真ライブラリアクセス：ユーザーが画像を選択した場合のみ使用。処理は端末上で実行。",
+      "クラッシュログおよび診断情報：安定性維持のため。",
+      "広告識別子（IDFA）：App Tracking Transparency（ATT）に同意した場合のみ使用。それ以外は文脈ベースの非パーソナライズド広告を使用。",
+      "正確な位置情報は取得しません。"
+    ],
+    use_title: "情報の利用目的",
+    use_list: [
+      "コア機能の提供（為替レート取得、換算、カメラのリアルタイム認識）。",
+      "パフォーマンスと信頼性の最適化（例：レートのキャッシュ、カメラパイプラインのウォームアップ）。",
+      "機能・UX 改善のための集計分析。",
+      "許可がある場合の広告のパーソナライズおよび効果測定。",
+      "不正防止・乱用対策および法令遵守。",
+      "アプリに関する重要なお知らせの送信。"
+    ],
+    share_title: "情報の共有・開示",
+    share_list: [
+      "契約上の保護措置を講じた業務委託先（分析・広告ネットワーク等）。",
+      "法的義務、権利・安全・システムの保護に必要な場合。",
+      "事業譲渡（合併、買収、資産売却等）。",
+      "個人データの販売は行いません。"
+    ],
+    retention_title: "保管期間",
+    retention_body: "本ポリシーに定める目的達成に必要な期間のみ情報を保管し、その後は削除または匿名化します。集計・匿名化データはより長期間保管される場合があります。",
+    permissions_title: "アプリの権限",
+    permissions_list: [
+      "カメラ：通貨額の光学的リアルタイム認識に必要。",
+      "写真ライブラリ：選択した画像の解析に使用（任意）。",
+      "ネットワーク：為替レートの取得および広告配信に必要。"
+    ],
+    tracking_title: "トラッキングと広告（ATT）",
+    tracking_body: "利用可能な環境において、より関連性の高い広告のため IDFA へのアクセスを求める ATT 許可をリクエストする場合があります。設定は iOS の「設定」からいつでも変更できます。",
+    rights_title: "ユーザーの権利",
+    rights_list: [
+      "適用法に基づく情報の開示・訂正・削除の請求。",
+      "ATT を拒否する、または広告設定を調整することでパーソナライズド広告をオプトアウト。",
+      "同意の撤回および iOS の「設定」で権限を無効化。",
+      "データに関するお問い合わせへの対応。"
+    ],
+    children_title: "未成年のプライバシー",
+    children_body: `${APP_NAME} は、各地域の法令で定められた年齢（例：13 歳または 16 歳）未満の児童を対象としていません。児童の個人情報を意図的に収集しません。`,
+    security_title: "セキュリティ",
+    security_body: "当社は業界標準の手段で情報を保護しますが、完全な安全性を保証するものではありません。",
+    transfer_title: "国際的なデータ移転",
+    transfer_body: "情報はお住まいの国以外で処理される場合があります。適用法に従い、適切な保護措置を講じます。",
+    changes_title: "ポリシーの変更",
+    changes_body: "本ポリシーは変更されることがあります。重要な変更はアプリ内等でお知らせします。",
+    contact_title: "お問い合わせ",
+    contact_body: `プライバシーや本ポリシーに関するご質問は、<a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a> までご連絡ください。`,
+    footer: `© 2025 ${APP_NAME}. 無断転載を禁じます。`
+  },
+
+  ko: {
+    title: "개인정보 처리방침",
+    langLabel: "언어",
+    lastUpdatedLabel: "최종 업데이트:",
+    intro_title: "소개",
+    intro_body: `${APP_NAME}(이하 “앱”, “당사”)는 사용자의 개인정보를 보호하기 위해 노력합니다. 본 방침은 앱 이용 시 정보의 수집·이용·공유·보호 방법을 설명합니다. 앱을 사용하면 본 방침에 동의한 것으로 간주됩니다.`,
+    scope_title: "적용 범위",
+    scope_body: `본 방침은 iOS용 ${APP_NAME} 및 앱 내 기능·콘텐츠에 적용되며, 앱에서 연결되는 제3자 웹사이트/서비스에는 적용되지 않습니다.`,
+    collect_title: "수집하는 정보",
+    collect_list: [
+      "기기 정보(기기 모델, OS 버전, 언어, 시간대 등).",
+      "앱 사용 데이터(상호작용, 화면 열람, 기능 사용 빈도) – 집계 형태.",
+      "카메라 접근: 실시간 통화(通貨) 인식을 위해 사용되며, 처리는 디바이스 내에서 이루어집니다. 사용자가 명시적으로 공유하지 않는 한 이미지는 업로드되지 않습니다.",
+      "사진 보관함 접근: 사용자가 이미지를 선택한 경우에만 사용되며, 처리는 디바이스 내에서 이루어집니다.",
+      "크래시 로그 및 진단 정보: 안정성 유지를 위해 수집.",
+      "광고 식별자(IDFA): App Tracking Transparency(ATT)에 동의한 경우에만 사용하며, 그 외에는 문맥 기반의 비개인화 광고를 제공합니다.",
+      "정확한 위치 정보는 수집하지 않습니다."
+    ],
+    use_title: "정보 이용 목적",
+    use_list: [
+      "핵심 기능 제공(환율 조회, 환산, 실시간 카메라 인식).",
+      "성능 및 안정성 최적화(예: 환율 캐시, 카메라 파이프라인 워밍업).",
+      "기능/UX 개선을 위한 집계 분석.",
+      "사용자 허용 시 광고 개인화 및 효과 측정.",
+      "사기/남용 방지 및 법규 준수.",
+      "중요 업데이트 사항 안내."
+    ],
+    share_title: "정보 공유 및 공개",
+    share_list: [
+      "계약상 보호 조치를 갖춘 서비스 제공업체(분석, 광고 네트워크 등).",
+      "법적 의무 준수 또는 권리·안전·시스템 보호를 위한 경우.",
+      "사업 양도(합병, 인수, 자산 매각 등).",
+      "개인 데이터를 판매하지 않습니다."
+    ],
+    retention_title: "보관 기간",
+    retention_body: "본 방침에 기재된 목적 달성에 필요한 기간 동안만 정보를 보관하며, 이후에는 삭제 또는 익명화합니다. 집계/익명화 데이터는 더 오래 보관될 수 있습니다.",
+    permissions_title: "앱 권한",
+    permissions_list: [
+      "카메라: 통화 금액의 실시간 광학 인식에 필요.",
+      "사진 보관함: 사용자가 선택한 이미지 분석(선택 사항).",
+      "네트워크: 환율 데이터 수신 및 광고 제공."
+    ],
+    tracking_title: "추적 및 광고(ATT)",
+    tracking_body: "가능한 환경에서 더 관련성 높은 광고 제공을 위해 IDFA 접근을 요청하는 ATT 권한을 요청할 수 있습니다. iOS 설정에서 언제든 변경할 수 있습니다.",
+    rights_title: "사용자 권리",
+    rights_list: [
+      "관련 법률에 따른 정보 열람·정정·삭제 요청.",
+      "ATT 거부 또는 광고 설정 조정을 통한 개인화 광고 옵트아웃.",
+      "동의 철회 및 iOS 설정에서 권한 비활성화.",
+      "데이터 관련 문의/요청 대응."
+    ],
+    children_title: "아동의 개인정보",
+    children_body: `${APP_NAME}는 관련 법령에서 정한 연령(예: 만 13세 또는 16세) 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 고의로 수집하지 않습니다.`,
+    security_title: "보안",
+    security_body: "업계 표준 보안 조치를 적용하지만, 전송/보관 방식의 100% 보안을 보장할 수는 없습니다.",
+    transfer_title: "국제 데이터 이전",
+    transfer_body: "정보는 사용자의 국가 외 지역에서 처리될 수 있으며, 관련 법에 따라 적절한 보호 조치를 취합니다.",
+    changes_title: "방침 변경",
+    changes_body: "본 방침은 수시로 업데이트될 수 있으며, 중요한 변경은 앱 내 등 적절한 방법으로 고지합니다.",
+    contact_title: "문의하기",
+    contact_body: `개인정보 또는 본 방침에 관한 문의는 <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>로 연락해 주세요.`,
+    footer: `© 2025 ${APP_NAME}. All rights reserved.`
+  },
+
+  es: {
+    title: "Política de privacidad",
+    langLabel: "Idioma",
+    lastUpdatedLabel: "Última actualización:",
+    intro_title: "Introducción",
+    intro_body: `${APP_NAME} (“la Aplicación”, “nosotros”) se compromete a proteger tu privacidad. Esta Política explica cómo recopilamos, usamos, compartimos y protegemos la información cuando utilizas la Aplicación.`,
+    scope_title: "Ámbito de aplicación",
+    scope_body: `Esta Política se aplica a la app iOS ${APP_NAME} y a sus funciones y contenidos. No cubre sitios o servicios de terceros enlazados desde la App.`,
+    collect_title: "Información que recopilamos",
+    collect_list: [
+      "Información del dispositivo (modelo, versión del SO, idioma, zona horaria).",
+      "Datos de uso de la app (interacciones, pantallas vistas, funciones usadas) de forma agregada.",
+      "Acceso a la cámara para el reconocimiento de divisas en tiempo real; el procesamiento se realiza en el dispositivo. Las imágenes no se suben salvo que tú lo elijas explícitamente.",
+      "Acceso a la fototeca solo cuando eliges una imagen para analizar; el procesamiento se realiza en el dispositivo.",
+      "Registros de fallos y diagnósticos para mantener la estabilidad.",
+      "Identificador de publicidad (IDFA) solo si otorgas permiso de App Tracking Transparency; de lo contrario usamos anuncios contextuales no personalizados.",
+      "No recopilamos datos de ubicación precisa."
+    ],
+    use_title: "Cómo usamos la información",
+    use_list: [
+      "Proporcionar funciones principales (obtención de tipos de cambio, conversiones y reconocimiento con cámara).",
+      "Optimizar el rendimiento y la fiabilidad (p. ej., caché de tipos, calentamiento de la cámara).",
+      "Analizar de forma agregada para mejorar funciones y experiencia.",
+      "Personalizar y medir la publicidad cuando lo permites.",
+      "Prevenir fraude y abuso, y cumplir con la ley.",
+      "Comunicarnos sobre actualizaciones importantes."
+    ],
+    share_title: "Compartición y divulgación",
+    share_list: [
+      "Proveedores de servicios (analítica y redes publicitarias) con garantías contractuales.",
+      "Obligaciones legales o protección de derechos, seguridad e integridad.",
+      "Transferencias comerciales (fusión, adquisición o venta de activos).",
+      "No vendemos datos personales."
+    ],
+    retention_title: "Conservación de datos",
+    retention_body: "Conservamos la información solo el tiempo necesario para los fines descritos y luego la eliminamos o anonimizamos. Los datos agregados/anonimizados pueden conservarse por más tiempo.",
+    permissions_title: "Permisos de la app",
+    permissions_list: [
+      "Cámara: necesaria para el reconocimiento óptico en tiempo real.",
+      "Fotos: opcional, para analizar imágenes seleccionadas.",
+      "Red: para obtener tipos de cambio y mostrar anuncios."
+    ],
+    tracking_title: "Seguimiento y publicidad (ATT)",
+    tracking_body: "Podemos solicitar el permiso ATT para acceder al IDFA y ofrecer anuncios menos intrusivos y más relevantes. Puedes cambiarlo en Ajustes de iOS.",
+    rights_title: "Tus opciones y derechos",
+    rights_list: [
+      "Acceder, rectificar o eliminar tu información según la ley aplicable.",
+      "Rechazar la publicidad personalizada negando ATT o ajustando tus preferencias.",
+      "Retirar el consentimiento y desactivar permisos en Ajustes de iOS.",
+      "Contactarnos para consultas sobre tus datos."
+    ],
+    children_title: "Privacidad de menores",
+    children_body: `${APP_NAME} no está dirigida a menores de la edad exigida por la legislación local (p. ej., 13 o 16 años) y no recopilamos deliberadamente datos de menores.`,
+    security_title: "Seguridad",
+    security_body: "Aplicamos medidas estándar de la industria, si bien ninguna transmisión o almacenamiento es 100 % seguro.",
+    transfer_title: "Transferencias internacionales",
+    transfer_body: "Tu información puede tratarse en países distintos al tuyo. Adoptamos medidas para asegurar protecciones adecuadas.",
+    changes_title: "Cambios en esta política",
+    changes_body: "Podemos actualizar esta Política periódicamente. Los cambios importantes se comunicarán dentro de la App u otros medios adecuados.",
+    contact_title: "Contacto",
+    contact_body: `Si tienes preguntas sobre la privacidad, escríbenos a <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>.`,
+    footer: `© 2025 ${APP_NAME}. Todos los derechos reservados.`
+  },
+
+  pt: {
+    title: "Política de Privacidade",
+    langLabel: "Idioma",
+    lastUpdatedLabel: "Última atualização:",
+    intro_title: "Introdução",
+    intro_body: `${APP_NAME} (“Aplicativo”, “nós”) está comprometido com a proteção da sua privacidade. Esta Política explica como coletamos, usamos, compartilhamos e protegemos informações ao utilizar o App.`,
+    scope_title: "Escopo",
+    scope_body: `Esta Política se aplica ao ${APP_NAME} para iOS e seus recursos/conteúdos. Não cobre sites ou serviços de terceiros vinculados pelo App.`,
+    collect_title: "Informações que coletamos",
+    collect_list: [
+      "Informações do dispositivo (modelo, versão do SO, idioma, fuso horário).",
+      "Dados de uso do App (interações, telas, recursos usados) de forma agregada.",
+      "Acesso à câmera para reconhecimento de moeda em tempo real; o processamento ocorre no dispositivo. Imagens não são enviadas a menos que você opte por compartilhar.",
+      "Acesso à biblioteca de fotos apenas quando você seleciona uma imagem para análise; o processamento ocorre no dispositivo.",
+      "Registros de falhas e diagnósticos para manter a estabilidade.",
+      "Identificador de publicidade (IDFA) somente se você conceder a permissão ATT; caso contrário, usamos anúncios contextuais não personalizados.",
+      "Não coletamos localização precisa."
+    ],
+    use_title: "Como usamos as informações",
+    use_list: [
+      "Fornecer funcionalidades principais (taxas de câmbio, conversões e reconhecimento por câmera).",
+      "Otimizar desempenho e confiabilidade (ex.: cache de taxas, pré-aquecimento da câmera).",
+      "Analisar de forma agregada para melhorar recursos e experiência.",
+      "Personalizar e mensurar anúncios quando permitido.",
+      "Prevenir fraude e abuso e cumprir leis aplicáveis.",
+      "Comunicar atualizações importantes sobre o App."
+    ],
+    share_title: "Compartilhamento e divulgação",
+    share_list: [
+      "Provedores de serviços (analítica e redes de anúncios) sob garantias contratuais.",
+      "Cumprimento de obrigações legais ou proteção de direitos, segurança e integridade.",
+      "Transferências de negócios (fusão, aquisição ou venda de ativos).",
+      "Não vendemos dados pessoais."
+    ],
+    retention_title: "Retenção de dados",
+    retention_body: "Mantemos as informações apenas pelo tempo necessário para os fins descritos e depois as excluímos ou anonimizamos. Dados agregados/anonimizados podem ser retidos por mais tempo.",
+    permissions_title: "Permissões do App",
+    permissions_list: [
+      "Câmera: necessária para reconhecimento ótico em tempo real.",
+      "Fotos: opcional, para analisar imagens selecionadas.",
+      "Rede: para buscar taxas de câmbio e exibir anúncios."
+    ],
+    tracking_title: "Rastreamento e publicidade (ATT)",
+    tracking_body: "Podemos solicitar a permissão ATT para acessar o IDFA e oferecer anúncios menos intrusivos e mais relevantes. Você pode alterar isso nos Ajustes do iOS.",
+    rights_title: "Suas escolhas e direitos",
+    rights_list: [
+      "Acesso, correção ou exclusão das suas informações conforme a lei.",
+      "Opt-out de anúncios personalizados recusando o ATT ou ajustando preferências.",
+      "Revogar consentimento e desabilitar permissões nos Ajustes do iOS.",
+      "Contatar-nos para dúvidas sobre seus dados."
+    ],
+    children_title: "Privacidade de crianças",
+    children_body: `${APP_NAME} não é direcionado a menores abaixo da idade legal aplicável (por exemplo, 13 ou 16 anos) e não coletamos intencionalmente dados pessoais de crianças.`,
+    security_title: "Segurança",
+    security_body: "Utilizamos medidas de segurança padrão do setor, embora nenhum método seja 100% seguro.",
+    transfer_title: "Transferências internacionais",
+    transfer_body: "Suas informações podem ser processadas em outros países. Adotamos medidas para garantir proteções adequadas.",
+    changes_title: "Alterações nesta política",
+    changes_body: "Podemos atualizar esta Política periodicamente. Mudanças materiais serão comunicadas no App ou por outros meios adequados.",
+    contact_title: "Fale conosco",
+    contact_body: `Dúvidas? Escreva para <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>.`,
+    footer: `© 2025 ${APP_NAME}. Todos os direitos reservados.`
+  },
+
+  fr: {
+    title: "Politique de confidentialité",
+    langLabel: "Langue",
+    lastUpdatedLabel: "Dernière mise à jour :",
+    intro_title: "Introduction",
+    intro_body: `${APP_NAME} (« l’Application », « nous ») protège votre vie privée. Cette Politique explique comment nous collectons, utilisons, partageons et protégeons vos informations lorsque vous utilisez l’Application.`,
+    scope_title: "Champ d’application",
+    scope_body: `La présente Politique s’applique à l’application iOS ${APP_NAME} et à ses fonctionnalités/contenus. Elle n’inclut pas les sites ou services tiers accessibles via l’Application.`,
+    collect_title: "Informations collectées",
+    collect_list: [
+      "Informations relatives à l’appareil (modèle, version d’iOS, langue, fuseau horaire).",
+      "Données d’utilisation de l’app (interactions, écrans consultés, fonctionnalités utilisées) sous forme agrégée.",
+      "Accès à la caméra pour la reconnaissance de devises en temps réel ; traitement local sur l’appareil. Les images ne sont pas envoyées sauf partage explicite de votre part.",
+      "Accès à la photothèque uniquement lorsque vous choisissez une image ; traitement local sur l’appareil.",
+      "Journaux d’incident et diagnostics pour la stabilité.",
+      "Identifiant publicitaire (IDFA) uniquement avec votre autorisation ATT ; sinon, publicités contextuelles non personnalisées.",
+      "Nous ne collectons pas de données de localisation précises."
+    ],
+    use_title: "Utilisation des informations",
+    use_list: [
+      "Fournir les fonctionnalités principales (taux de change, conversions, reconnaissance via caméra).",
+      "Optimiser les performances et la fiabilité (cache des taux, pré-chauffage de la caméra).",
+      "Analyser de manière agrégée pour améliorer les fonctionnalités et l’UX.",
+      "Personnaliser et mesurer la publicité lorsque vous l’autorisez.",
+      "Prévenir la fraude/l’abus et respecter la loi.",
+      "Communiquer des mises à jour importantes de l’Application."
+    ],
+    share_title: "Partage et divulgation",
+    share_list: [
+      "Sous-traitants (analytique, réseaux publicitaires) soumis à des garanties contractuelles.",
+      "Obligations légales ou protection des droits, de la sécurité et de l’intégrité.",
+      "Opérations de restructuration (fusion, acquisition, cession d’actifs).",
+      "Nous ne vendons pas de données personnelles."
+    ],
+    retention_title: "Durée de conservation",
+    retention_body: "Nous conservons les informations uniquement le temps nécessaire aux finalités décrites, puis les supprimons ou les anonymisons. Les données agrégées/anonymisées peuvent être conservées plus longtemps.",
+    permissions_title: "Autorisations de l’app",
+    permissions_list: [
+      "Caméra : nécessaire à la reconnaissance optique en temps réel.",
+      "Photothèque : facultative, pour analyser des images sélectionnées.",
+      "Réseau : récupérer les taux de change et diffuser des annonces."
+    ],
+    tracking_title: "Suivi et publicité (ATT)",
+    tracking_body: "Le cas échéant, nous pouvons demander l’autorisation ATT pour accéder à l’IDFA et afficher des publicités moins intrusives et plus pertinentes. Vous pouvez modifier ce choix dans Réglages iOS.",
+    rights_title: "Vos choix et vos droits",
+    rights_list: [
+      "Accès, rectification ou suppression de vos informations conformément à la loi.",
+      "Refus de la publicité personnalisée en déclinant l’ATT ou en ajustant vos préférences.",
+      "Retrait du consentement et désactivation des autorisations dans Réglages iOS.",
+      "Nous contacter pour toute demande relative à vos données."
+    ],
+    children_title: "Protection des mineurs",
+    children_body: `${APP_NAME} ne s’adresse pas aux enfants au-dessous de l’âge légal applicable (p. ex. 13 ou 16 ans) et ne collecte pas sciemment leurs données.`,
+    security_title: "Sécurité",
+    security_body: "Nous appliquons des mesures conformes aux standards du secteur, sans garantie absolue.",
+    transfer_title: "Transferts internationaux",
+    transfer_body: "Vos informations peuvent être traitées hors de votre pays. Nous mettons en place des protections appropriées conformément aux lois applicables.",
+    changes_title: "Modifications de la Politique",
+    changes_body: "Nous pouvons mettre à jour la présente Politique. Toute modification importante sera signalée dans l’App ou par d’autres moyens appropriés.",
+    contact_title: "Nous contacter",
+    contact_body: `Pour toute question, écrivez-nous à <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>.`,
+    footer: `© 2025 ${APP_NAME}. Tous droits réservés.`
+  },
+
+  de: {
+    title: "Datenschutzerklärung",
+    langLabel: "Sprache",
+    lastUpdatedLabel: "Letzte Aktualisierung:",
+    intro_title: "Einleitung",
+    intro_body: `${APP_NAME} („App“, „wir“) nimmt den Schutz Ihrer Daten ernst. Diese Erklärung beschreibt, wie wir beim Nutzen der App Informationen erheben, verwenden, teilen und schützen.`,
+    scope_title: "Geltungsbereich",
+    scope_body: `Gilt für die iOS-App ${APP_NAME} sowie deren Funktionen/Inhalte. Verlinkte Dienste Dritter sind nicht umfasst.`,
+    collect_title: "Von uns erhobene Informationen",
+    collect_list: [
+      "Geräteinformationen (Modell, OS-Version, Sprache, Zeitzone).",
+      "Nutzungsdaten der App (Interaktionen, aufgerufene Ansichten, Funktionsnutzung) in aggregierter Form.",
+      "Kamerazugriff für die Echtzeiterkennung von Währungswerten; Verarbeitung erfolgt lokal auf dem Gerät. Bilder werden nur bei Ihrer ausdrücklichen Freigabe übertragen.",
+      "Zugriff auf die Fotomediathek nur, wenn Sie ein Bild zur Analyse auswählen; Verarbeitung lokal.",
+      "Absturzprotokolle und Diagnosedaten zur Stabilität.",
+      "Werbe-Identifier (IDFA) nur nach ATT-Zustimmung; andernfalls kontextbezogene, nicht personalisierte Werbung.",
+      "Keine Erhebung präziser Standortdaten."
+    ],
+    use_title: "Verwendung der Informationen",
+    use_list: [
+      "Bereitstellung der Kernfunktionen (Wechselkurse, Umrechnungen, Kamera-Erkennung).",
+      "Optimierung von Leistung und Zuverlässigkeit (z. B. Caching, Kamera-Warm-Up).",
+      "Aggregierte Analysen zur Verbesserung von Funktionen und UX.",
+      "Personalisierung und Messung von Werbung, sofern erlaubt.",
+      "Betrugsprävention, Missbrauchsverhinderung und Rechtskonformität.",
+      "Kommunikation wichtiger Updates."
+    ],
+    share_title: "Weitergabe & Offenlegung",
+    share_list: [
+      "Dienstleister (Analytik, Werbenetzwerke) mit vertraglichen Schutzmaßnahmen.",
+      "Gesetzliche Verpflichtungen bzw. Schutz von Rechten, Sicherheit und Integrität.",
+      "Unternehmensübertragungen (Fusion, Übernahme, Vermögensverkauf).",
+      "Kein Verkauf personenbezogener Daten."
+    ],
+    retention_title: "Speicherdauer",
+    retention_body: "Wir speichern Daten nur so lange wie nötig und löschen bzw. anonymisieren diese anschließend. Aggregierte/anonymisierte Daten können länger aufbewahrt werden.",
+    permissions_title: "App-Berechtigungen",
+    permissions_list: [
+      "Kamera: für die optische Echtzeiterkennung von Beträgen.",
+      "Fotos: optional, zur Analyse ausgewählter Bilder.",
+      "Netzwerk: zum Abrufen von Wechselkursen und Ausspielen von Werbung."
+    ],
+    tracking_title: "Tracking & Werbung (ATT)",
+    tracking_body: "Wir können um ATT-Zustimmung bitten, um die IDFA für weniger aufdringliche und relevantere Werbung zu nutzen. Die Einstellung kann in iOS jederzeit geändert werden.",
+    rights_title: "Ihre Rechte",
+    rights_list: [
+      "Zugriff, Berichtigung oder Löschung gemäß geltendem Recht.",
+      "Opt-out personalisierter Werbung durch Ablehnen von ATT oder Anpassen der Präferenzen.",
+      "Widerruf von Einwilligungen und Deaktivierung von Berechtigungen in den iOS-Einstellungen.",
+      "Kontaktaufnahme bei Fragen zu Ihren Daten."
+    ],
+    children_title: "Kinderschutz",
+    children_body: `${APP_NAME} richtet sich nicht an Kinder unter dem jeweils geltenden Mindestalter (z. B. 13 oder 16 Jahre) und sammelt deren Daten nicht wissentlich.`,
+    security_title: "Sicherheit",
+    security_body: "Wir setzen branchenübliche Schutzmaßnahmen ein; absolute Sicherheit kann nicht garantiert werden.",
+    transfer_title: "Internationale Datenübermittlung",
+    transfer_body: "Ihre Daten können außerhalb Ihres Landes verarbeitet werden. Wir sorgen für angemessene Schutzmechanismen gemäß den Gesetzen.",
+    changes_title: "Änderungen",
+    changes_body: "Diese Erklärung kann aktualisiert werden; wesentliche Änderungen werden in der App oder auf anderem Wege mitgeteilt.",
+    contact_title: "Kontakt",
+    contact_body: `Fragen? Schreiben Sie an <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>.`,
+    footer: `© 2025 ${APP_NAME}. Alle Rechte vorbehalten.`
+  },
+
+  th: {
+    title: "นโยบายความเป็นส่วนตัว",
+    langLabel: "ภาษา",
+    lastUpdatedLabel: "อัปเดตล่าสุด:",
+    intro_title: "บทนำ",
+    intro_body: `${APP_NAME} (“แอป”, “เรา”) ให้ความสำคัญกับความเป็นส่วนตัวของคุณ นโยบายนี้อธิบายการเก็บ ใช้ แชร์ และปกป้องข้อมูลเมื่อคุณใช้แอป`,
+    scope_title: "ขอบเขต",
+    scope_body: `นโยบายนี้ใช้กับแอป iOS ${APP_NAME} และฟีเจอร์/เนื้อหาภายในแอป ไม่ครอบคลุมเว็บไซต์หรือบริการของบุคคลที่สามที่ลิงก์จากแอป`,
+    collect_title: "ข้อมูลที่เราเก็บ",
+    collect_list: [
+      "ข้อมูลอุปกรณ์ (รุ่นอุปกรณ์ เวอร์ชันระบบปฏิบัติการ ภาษา เขตเวลา)",
+      "ข้อมูลการใช้งานแอป (การโต้ตอบ หน้าที่เปิดใช้งาน ความถี่การใช้ฟีเจอร์) ในลักษณะสรุปรวม",
+      "การเข้าถึงกล้องเพื่อจดจำมูลค่าเงินแบบเรียลไทม์ การประมวลผลทำบนอุปกรณ์ ภาพจะไม่อัปโหลดเว้นแต่คุณเลือกแชร์",
+      "การเข้าถึงคลังรูปภาพเมื่อคุณเลือกภาพเพื่อวิเคราะห์ การประมวลผลทำบนอุปกรณ์",
+      "บันทึกการขัดข้องและข้อมูลวินิจฉัยเพื่อความเสถียร",
+      "ตัวระบุโฆษณา (IDFA) เฉพาะเมื่อคุณอนุญาต ATT มิฉะนั้นจะแสดงโฆษณาแบบไม่ปรับให้เป็นส่วนบุคคล",
+      "เราไม่เก็บข้อมูลตำแหน่งที่ตั้งแบบละเอียด"
+    ],
+    use_title: "การใช้ข้อมูล",
+    use_list: [
+      "ให้บริการฟังก์ชันหลัก (ดึงอัตราแลกเปลี่ยน คำนวณ และจดจำผ่านกล้อง)",
+      "เพิ่มประสิทธิภาพและความเสถียร (เช่น แคชอัตรา เปิดเครื่องมือกล้องล่วงหน้า)",
+      "วิเคราะห์แบบสรุปรวมเพื่อพัฒนาฟีเจอร์และประสบการณ์",
+      "ปรับแต่งและวัดผลโฆษณาเมื่อคุณอนุญาต",
+      "ป้องกันการฉ้อโกง/การใช้งานในทางที่ผิด และปฏิบัติตามกฎหมาย",
+      "สื่อสารประกาศสำคัญเกี่ยวกับแอป"
+    ],
+    share_title: "การแบ่งปันและเปิดเผย",
+    share_list: [
+      "ผู้ให้บริการ (วิเคราะห์และเครือข่ายโฆษณา) ภายใต้สัญญาคุ้มครองข้อมูล",
+      "ตามข้อกำหนดทางกฎหมายหรือเพื่อปกป้องสิทธิ ความปลอดภัย และความถูกต้องของระบบ",
+      "การโอนธุรกิจ (ควบรวมกิจการ การเข้าซื้อกิจการ หรือขายทรัพย์สิน)",
+      "เราไม่ขายข้อมูลส่วนบุคคล"
+    ],
+    retention_title: "การเก็บรักษาข้อมูล",
+    retention_body: "เราจะเก็บข้อมูลไว้เท่าที่จำเป็นต่อวัตถุประสงค์ที่ระบุ จากนั้นจะลบหรือทำให้ไม่สามารถระบุตัวตนได้ ข้อมูลแบบสรุปรวม/ไม่ระบุตัวตนอาจเก็บไว้นานกว่า",
+    permissions_title: "สิทธิ์ที่แอปต้องใช้",
+    permissions_list: [
+      "กล้อง: สำหรับการรู้จำข้อความตัวเลขของเงินแบบเรียลไทม์",
+      "คลังรูปภาพ: ตัวเลือกสำหรับวิเคราะห์รูปภาพที่คุณเลือก",
+      "เครือข่าย: สำหรับดึงอัตราแลกเปลี่ยนและแสดงโฆษณา"
+    ],
+    tracking_title: "การติดตามและโฆษณา (ATT)",
+    tracking_body: "เราอาจขอสิทธิ์ ATT เพื่อเข้าถึง IDFA สำหรับโฆษณาที่รบกวนน้อยและเกี่ยวข้องมากขึ้น คุณสามารถปรับเปลี่ยนได้ตลอดเวลาในการตั้งค่า iOS",
+    rights_title: "สิทธิและทางเลือกของคุณ",
+    rights_list: [
+      "ขอเข้าถึง แก้ไข หรือขอลบข้อมูล ตามกฎหมายที่เกี่ยวข้อง",
+      "ปฏิเสธโฆษณาแบบปรับให้เป็นส่วนบุคคลโดยปฏิเสธ ATT หรือปรับการตั้งค่าโฆษณา",
+      "ถอนความยินยอมและปิดการอนุญาตในการตั้งค่า iOS",
+      "ติดต่อเราเพื่อสอบถามเกี่ยวกับข้อมูลของคุณ"
+    ],
+    children_title: "ความเป็นส่วนตัวของผู้เยาว์",
+    children_body: `${APP_NAME} ไม่ได้มุ่งเป้าไปที่ผู้เยาว์ที่อายุต่ำกว่าที่กฎหมายกำหนด (เช่น 13 หรือ 16 ปี) และจะไม่เก็บข้อมูลดังกล่าวโดยเจตนา`,
+    security_title: "ความปลอดภัย",
+    security_body: "เราใช้มาตรการความปลอดภัยตามมาตรฐานอุตสาหกรรม แต่อาจไม่สามารถรับประกันความปลอดภัยได้ 100%",
+    transfer_title: "การโอนข้อมูลระหว่างประเทศ",
+    transfer_body: "ข้อมูลของคุณอาจถูกประมวลผลนอกประเทศที่คุณอาศัย เราจะคุ้มครองตามกฎหมายที่บังคับใช้",
+    changes_title: "การเปลี่ยนแปลงนโยบาย",
+    changes_body: "เราอาจปรับปรุงนโยบายนี้เป็นระยะ หากมีการเปลี่ยนแปลงสำคัญจะแจ้งให้ทราบภายในแอปหรือช่องทางที่เหมาะสม",
+    contact_title: "ติดต่อเรา",
+    contact_body: `หากมีคำถาม โปรดส่งอีเมลมาที่ <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>`,
+    footer: `© 2025 ${APP_NAME}. สงวนลิขสิทธิ์`
+  },
+
+  id: {
+    title: "Kebijakan Privasi",
+    langLabel: "Bahasa",
+    lastUpdatedLabel: "Pembaruan terakhir:",
+    intro_title: "Pendahuluan",
+    intro_body: `${APP_NAME} (“Aplikasi”, “kami”) berkomitmen melindungi privasi Anda. Kebijakan ini menjelaskan cara kami mengumpulkan, menggunakan, membagikan, dan melindungi informasi saat Anda menggunakan Aplikasi.`,
+    scope_title: "Ruang Lingkup",
+    scope_body: `Kebijakan ini berlaku untuk aplikasi iOS ${APP_NAME} beserta fitur/konten di dalamnya, tidak termasuk situs atau layanan pihak ketiga yang ditautkan.`,
+    collect_title: "Informasi yang kami kumpulkan",
+    collect_list: [
+      "Informasi perangkat (model, versi OS, bahasa, zona waktu).",
+      "Data penggunaan aplikasi (interaksi, layar yang dilihat, frekuensi penggunaan fitur) dalam bentuk agregat.",
+      "Akses kamera untuk pengenalan mata uang secara real-time; pemrosesan dilakukan di perangkat. Gambar tidak diunggah kecuali Anda memilih membagikannya.",
+      "Akses pustaka foto hanya saat Anda memilih gambar untuk dianalisis; pemrosesan dilakukan di perangkat.",
+      "Log crash dan diagnostik untuk menjaga stabilitas.",
+      "Pengenal iklan (IDFA) hanya jika Anda memberikan izin ATT; jika tidak, kami menggunakan iklan kontekstual non-personal.",
+      "Kami tidak mengumpulkan lokasi presisi."
+    ],
+    use_title: "Cara kami menggunakan informasi",
+    use_list: [
+      "Menyediakan fungsi inti (pengambilan kurs, konversi, dan pengenalan kamera).",
+      "Mengoptimalkan kinerja dan keandalan (cache kurs, pemanasan awal pipeline kamera).",
+      "Menganalisis secara agregat untuk meningkatkan fitur dan pengalaman.",
+      "Personalisasi dan pengukuran iklan jika Anda mengizinkan.",
+      "Mencegah penipuan/penyalahgunaan dan mematuhi hukum yang berlaku.",
+      "Mengomunikasikan pembaruan penting tentang Aplikasi."
+    ],
+    share_title: "Berbagi & pengungkapan",
+    share_list: [
+      "Penyedia layanan (analitik dan jaringan iklan) dengan perlindungan kontraktual.",
+      "Kewajiban hukum atau untuk melindungi hak, keselamatan, dan integritas.",
+      "Transfer bisnis (merger, akuisisi, atau penjualan aset).",
+      "Kami tidak menjual data pribadi."
+    ],
+    retention_title: "Penyimpanan data",
+    retention_body: "Kami menyimpan informasi hanya selama diperlukan untuk tujuan yang dijelaskan, lalu menghapus atau menganonimkannya. Data agregat/anonim dapat disimpan lebih lama.",
+    permissions_title: "Izin Aplikasi",
+    permissions_list: [
+      "Kamera: diperlukan untuk pengenalan optik real-time.",
+      "Foto: opsional, untuk menganalisis gambar yang Anda pilih.",
+      "Jaringan: mengambil kurs dan menayangkan iklan."
+    ],
+    tracking_title: "Pelacakan & Iklan (ATT)",
+    tracking_body: "Kami dapat meminta izin ATT untuk mengakses IDFA demi iklan yang lebih relevan dan tidak mengganggu. Anda bisa mengubahnya kapan saja di Pengaturan iOS.",
+    rights_title: "Pilihan & hak Anda",
+    rights_list: [
+      "Akses, koreksi, atau hapus informasi sesuai hukum.",
+      "Menolak iklan personal dengan menolak ATT atau mengatur preferensi iklan.",
+      "Mencabut persetujuan dan menonaktifkan izin di Pengaturan iOS.",
+      "Hubungi kami untuk pertanyaan terkait data Anda."
+    ],
+    children_title: "Privasi anak",
+    children_body: `${APP_NAME} tidak ditujukan untuk anak-anak di bawah usia yang diwajibkan hukum (mis. 13 atau 16) dan kami tidak dengan sengaja mengumpulkan datanya.`,
+    security_title: "Keamanan",
+    security_body: "Kami menggunakan perlindungan standar industri, namun tidak ada metode yang 100% aman.",
+    transfer_title: "Transfer internasional",
+    transfer_body: "Informasi Anda dapat diproses di luar negara Anda. Kami menerapkan perlindungan yang sesuai sesuai hukum.",
+    changes_title: "Perubahan kebijakan",
+    changes_body: "Kebijakan ini dapat diperbarui dari waktu ke waktu. Perubahan material akan diinformasikan di dalam Aplikasi atau sarana lain yang sesuai.",
+    contact_title: "Hubungi kami",
+    contact_body: `Pertanyaan? Email ke <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>.`,
+    footer: `© 2025 ${APP_NAME}. Seluruh hak cipta dilindungi.`
+  },
+
+  ru: {
+    title: "Политика конфиденциальности",
+    langLabel: "Язык",
+    lastUpdatedLabel: "Дата обновления:",
+    intro_title: "Введение",
+    intro_body: `${APP_NAME} («Приложение», «мы») уважает вашу конфиденциальность. В настоящей Политике описывается, как мы собираем, используем, передаем и защищаем информацию при использовании Приложения.`,
+    scope_title: "Область действия",
+    scope_body: `Политика распространяется на iOS-приложение ${APP_NAME} и его функции/контент. Сайты и сервисы третьих лиц, на которые могут быть ссылки, не покрываются.`,
+    collect_title: "Какие данные мы собираем",
+    collect_list: [
+      "Информация об устройстве (модель, версия ОС, язык, часовой пояс).",
+      "Данные об использовании приложения (взаимодействия, просматриваемые экраны, частота функций) в агрегированном виде.",
+      "Доступ к камере для распознавания валюты в реальном времени; обработка выполняется на устройстве. Изображения не загружаются без вашего явного выбора поделиться.",
+      "Доступ к фотогалерее только при выборе изображения для анализа; обработка на устройстве.",
+      "Журналы сбоев и диагностические данные для обеспечения стабильности.",
+      "Рекламный идентификатор (IDFA) только при разрешении ATT; иначе используется контекстная неперсонализированная реклама.",
+      "Мы не собираем точные данные о местоположении."
+    ],
+    use_title: "Как мы используем данные",
+    use_list: [
+      "Предоставление основных функций (получение курсов, конвертация, распознавание через камеру).",
+      "Оптимизация производительности и надежности (кэш курсов, предварительный прогрев камеры).",
+      "Агрегированный анализ для улучшения функций и интерфейса.",
+      "Персонализация и измерение рекламы при наличии вашего разрешения.",
+      "Предотвращение мошенничества/злоупотреблений и соблюдение законодательства.",
+      "Коммуникация о важных обновлениях приложения."
+    ],
+    share_title: "Передача и раскрытие",
+    share_list: [
+      "Поставщики услуг (аналитика, рекламные сети) при наличии договорных гарантий.",
+      "По требованиям закона или для защиты прав, безопасности и целостности.",
+      "Корпоративные сделки (слияние, поглощение, продажа активов).",
+      "Мы не продаем персональные данные."
+    ],
+    retention_title: "Срок хранения",
+    retention_body: "Мы храним данные только столько, сколько необходимо для целей, описанных в Политике, после чего удаляем или обезличиваем их. Агрегированные/обезличенные данные могут храниться дольше.",
+    permissions_title: "Разрешения приложения",
+    permissions_list: [
+      "Камера: для оптического распознавания сумм в реальном времени.",
+      "Фотогалерея: по выбору — для анализа выбранных изображений.",
+      "Сеть: для получения курсов валют и показа рекламы."
+    ],
+    tracking_title: "Отслеживание и реклама (ATT)",
+    tracking_body: "Мы можем запросить разрешение ATT для доступа к IDFA с целью менее навязчивой и более релевантной рекламы. Вы можете изменить выбор в настройках iOS.",
+    rights_title: "Ваши права",
+    rights_list: [
+      "Доступ, исправление или удаление данных в соответствии с законом.",
+      "Отказ от персонализированной рекламы, отклонив ATT или изменив настройки рекламы.",
+      "Отзыв согласия и отключение разрешений в настройках iOS.",
+      "Обращения по вопросам обработки данных."
+    ],
+    children_title: "Дети",
+    children_body: `${APP_NAME} не предназначено для детей младше установленного законом возраста (например, 13 или 16 лет) и не собирает такие данные умышленно.`,
+    security_title: "Безопасность",
+    security_body: "Мы применяем меры защиты отраслевого уровня, однако абсолютная безопасность не может быть гарантирована.",
+    transfer_title: "Международная передача",
+    transfer_body: "Данные могут обрабатываться за пределами вашей страны. Мы обеспечиваем надлежащие меры защиты в соответствии с законодательством.",
+    changes_title: "Изменения политики",
+    changes_body: "Мы можем периодически обновлять Политику. О существенных изменениях сообщим в приложении или иным подходящим способом.",
+    contact_title: "Контакты",
+    contact_body: `Вопросы по конфиденциальности направляйте на <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>.`,
+    footer: `© 2025 ${APP_NAME}. Все права защищены.`
+  },
+
+  vi: {
+    title: "Chính sách quyền riêng tư",
+    langLabel: "Ngôn ngữ",
+    lastUpdatedLabel: "Cập nhật lần cuối:",
+    intro_title: "Giới thiệu",
+    intro_body: `${APP_NAME} (“Ứng dụng”, “chúng tôi”) cam kết bảo vệ quyền riêng tư của bạn. Chính sách này giải thích cách chúng tôi thu thập, sử dụng, chia sẻ và bảo vệ thông tin khi bạn dùng Ứng dụng.`,
+    scope_title: "Phạm vi áp dụng",
+    scope_body: `Chính sách áp dụng cho ứng dụng iOS ${APP_NAME} và các tính năng/nội dung trong ứng dụng; không bao gồm dịch vụ bên thứ ba được liên kết.`,
+    collect_title: "Thông tin chúng tôi thu thập",
+    collect_list: [
+      "Thông tin thiết bị (mẫu máy, phiên bản hệ điều hành, ngôn ngữ, múi giờ).",
+      "Dữ liệu sử dụng ứng dụng (tương tác, màn hình đã xem, tần suất dùng tính năng) ở dạng tổng hợp.",
+      "Quyền truy cập máy ảnh để nhận dạng tiền tệ theo thời gian thực; xử lý trên thiết bị. Ảnh không được tải lên trừ khi bạn chủ động chia sẻ.",
+      "Truy cập thư viện ảnh khi bạn chọn ảnh để phân tích; xử lý trên thiết bị.",
+      "Nhật ký sự cố và chẩn đoán để đảm bảo ổn định.",
+      "Định danh quảng cáo (IDFA) chỉ khi bạn cho phép ATT; nếu không, chúng tôi dùng quảng cáo ngữ cảnh không cá nhân hóa.",
+      "Chúng tôi không thu thập dữ liệu vị trí chính xác."
+    ],
+    use_title: "Cách chúng tôi sử dụng thông tin",
+    use_list: [
+      "Cung cấp chức năng cốt lõi (lấy tỷ giá, quy đổi và nhận dạng bằng camera).",
+      "Tối ưu hiệu năng và độ ổn định (ví dụ: bộ nhớ đệm tỷ giá, làm ấm pipeline camera).",
+      "Phân tích tổng hợp để cải thiện tính năng và trải nghiệm.",
+      "Cá nhân hóa và đo lường quảng cáo khi bạn cho phép.",
+      "Ngăn chặn gian lận/lạm dụng và tuân thủ pháp luật.",
+      "Thông báo các cập nhật quan trọng của Ứng dụng."
+    ],
+    share_title: "Chia sẻ & công bố",
+    share_list: [
+      "Nhà cung cấp dịch vụ (phân tích, mạng quảng cáo) với cam kết bảo vệ theo hợp đồng.",
+      "Theo yêu cầu pháp lý hoặc để bảo vệ quyền lợi, an toàn và tính toàn vẹn.",
+      "Chuyển giao doanh nghiệp (sáp nhập, mua lại, bán tài sản).",
+      "Chúng tôi không bán dữ liệu cá nhân."
+    ],
+    retention_title: "Lưu trữ dữ liệu",
+    retention_body: "Chúng tôi chỉ lưu thông tin trong thời gian cần thiết cho các mục đích nêu trên, sau đó xóa hoặc ẩn danh. Dữ liệu tổng hợp/ẩn danh có thể được giữ lâu hơn.",
+    permissions_title: "Quyền ứng dụng",
+    permissions_list: [
+      "Máy ảnh: cần cho nhận dạng quang học thời gian thực.",
+      "Ảnh: tùy chọn, để phân tích hình ảnh bạn chọn.",
+      "Mạng: lấy tỷ giá và hiển thị quảng cáo."
+    ],
+    tracking_title: "Theo dõi & quảng cáo (ATT)",
+    tracking_body: "Chúng tôi có thể yêu cầu quyền ATT để truy cập IDFA nhằm hiển thị quảng cáo ít gây phiền và phù hợp hơn. Bạn có thể thay đổi trong Cài đặt iOS bất cứ lúc nào.",
+    rights_title: "Quyền và lựa chọn của bạn",
+    rights_list: [
+      "Truy cập, chỉnh sửa hoặc xóa thông tin theo luật hiện hành.",
+      "Từ chối quảng cáo cá nhân hóa bằng cách từ chối ATT hoặc điều chỉnh tùy chọn quảng cáo.",
+      "Rút lại đồng ý và tắt quyền trong Cài đặt iOS.",
+      "Liên hệ với chúng tôi về các yêu cầu liên quan đến dữ liệu."
+    ],
+    children_title: "Quyền riêng tư trẻ em",
+    children_body: `${APP_NAME} không nhắm tới người dùng dưới độ tuổi theo luật (ví dụ 13 hoặc 16) và không cố ý thu thập dữ liệu của trẻ em.`,
+    security_title: "Bảo mật",
+    security_body: "Chúng tôi áp dụng biện pháp bảo mật theo tiêu chuẩn ngành; tuy nhiên không có phương thức nào an toàn tuyệt đối 100%.",
+    transfer_title: "Chuyển dữ liệu quốc tế",
+    transfer_body: "Dữ liệu của bạn có thể được xử lý ngoài quốc gia của bạn. Chúng tôi áp dụng biện pháp bảo vệ phù hợp theo luật.",
+    changes_title: "Thay đổi chính sách",
+    changes_body: "Chính sách có thể được cập nhật theo thời gian; các thay đổi quan trọng sẽ được thông báo trong Ứng dụng hoặc kênh phù hợp.",
+    contact_title: "Liên hệ",
+    contact_body: `Mọi thắc mắc xin gửi đến <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>.`,
+    footer: `© 2025 ${APP_NAME}. Bảo lưu mọi quyền.`
+  },
+
+  ar: {
+    title: "سياسة الخصوصية",
+    langLabel: "اللغة",
+    lastUpdatedLabel: "آخر تحديث:",
+    intro_title: "مقدمة",
+    intro_body: `نلتزم في ${APP_NAME}‎ (“التطبيق”، “نحن”) بحماية خصوصيتك. توضح هذه السياسة كيفية جمع المعلومات واستخدامها ومشاركتها وحمايتها عند استخدامك للتطبيق.`,
+    scope_title: "نطاق السياسة",
+    scope_body: `تنطبق هذه السياسة على تطبيق ${APP_NAME} لنظام iOS وما يقدمه من مزايا ومحتوى داخل التطبيق. لا تشمل مواقع أو خدمات الأطراف الثالثة المرتبطة بالتطبيق.`,
+    collect_title: "المعلومات التي نجمعها",
+    collect_list: [
+      "معلومات الجهاز (طراز الجهاز، إصدار النظام، اللغة، المنطقة الزمنية).",
+      "بيانات استخدام التطبيق (التفاعلات، الشاشات التي تمت زيارتها، تكرار استخدام الميزات) بشكلٍ مجمّع.",
+      "الوصول إلى الكاميرا للتعرّف على العملات في الوقت الفعلي؛ تتم المعالجة على الجهاز. لا نرفع الصور إلا إذا اخترتَ مشاركتها صراحةً.",
+      "الوصول إلى مكتبة الصور عند اختيارك صورة للتحليل؛ تتم المعالجة على الجهاز.",
+      "سجلات الأعطال وبيانات التشخيص للحفاظ على الاستقرار.",
+      "معرّف الإعلانات (IDFA) فقط عند منح إذن شفافية تتبّع التطبيقات (ATT)؛ وإلا نعرض إعلانات سياقية غير مخصّصة.",
+      "لا نجمع بيانات الموقع الدقيق."
+    ],
+    use_title: "كيفية استخدامنا للمعلومات",
+    use_list: [
+      "تقديم الوظائف الأساسية (جلب أسعار الصرف، التحويلات، والتعرّف عبر الكاميرا).",
+      "تحسين الأداء والموثوقية (مثل التخزين المؤقت للأسعار، تهيئة مسار الكاميرا مسبقًا).",
+      "تحليلات مجمّعة لتحسين الميزات وتجربة الاستخدام.",
+      "تخصيص الإعلانات وقياسها عندما تسمح بذلك.",
+      "منع الاحتيال وإساءة الاستخدام والامتثال للقوانين.",
+      "التواصل بشأن التحديثات المهمة للتطبيق."
+    ],
+    share_title: "المشاركة والإفصاح",
+    share_list: [
+      "مقدّمو الخدمات (التحليلات وشبكات الإعلانات) بموجب ضمانات تعاقدية.",
+      "الامتثال للالتزامات القانونية أو لحماية الحقوق والسلامة والنزاهة.",
+      "عمليات نقل الأعمال (اندماج، استحواذ، أو بيع أصول).",
+      "لا نبيع البيانات الشخصية."
+    ],
+    retention_title: "الاحتفاظ بالبيانات",
+    retention_body: "نحتفظ بالمعلومات للمدة اللازمة فقط للأغراض الموضّحة في هذه السياسة، ثم نحذفها أو نُجري عملية إخفاء الهوية. قد نحتفظ بالبيانات المجمّعة/المجهولة لفترات أطول.",
+    permissions_title: "أذونات التطبيق",
+    permissions_list: [
+      "الكاميرا: مطلوبة للتعرّف البصري الفوري على مبالغ العملات.",
+      "مكتبة الصور: اختياري، لتحليل الصور التي تختارها.",
+      "الشبكة: لجلب أسعار الصرف وعرض الإعلانات."
+    ],
+    tracking_title: "التتبّع والإعلانات (ATT)",
+    tracking_body: "قد نطلب إذن ATT للوصول إلى IDFA لتقديم إعلانات أقل إزعاجًا وأكثر صلة. يمكنك تغيير ذلك في إعدادات iOS في أي وقت.",
+    rights_title: "اختياراتك وحقوقك",
+    rights_list: [
+      "الوصول إلى معلوماتك أو تصحيحها أو حذفها وفقًا للقوانين المعمول بها.",
+      "إيقاف الإعلانات المخصصة برفض ATT أو تعديل تفضيلات الإعلانات.",
+      "سحب الموافقة وتعطيل الأذونات من إعدادات iOS.",
+      "التواصل معنا بخصوص أي استفسارات حول بياناتك."
+    ],
+    children_title: "خصوصية الأطفال",
+    children_body: `لا يستهدف ${APP_NAME} الأطفال دون السن الذي تحدده القوانين المحلية (مثل 13 أو 16 عامًا)، ولا نجمع عمدًا بياناتهم.`,
+    security_title: "الأمان",
+    security_body: "نستخدم تدابير أمان وفق المعايير الصناعية، مع العلم بأنه لا توجد وسيلة تضمن الأمان التام بنسبة 100٪.",
+    transfer_title: "النقل الدولي",
+    transfer_body: "قد تُعالَج معلوماتك في دول أخرى غير بلدك. نتخذ التدابير اللازمة لضمان الحماية المناسبة وفق القوانين.",
+    changes_title: "تغييرات على هذه السياسة",
+    changes_body: "قد نقوم بتحديث هذه السياسة من وقت لآخر. سنبرز التغييرات الجوهرية داخل التطبيق أو عبر وسائل مناسبة.",
+    contact_title: "اتصل بنا",
+    contact_body: `للاستفسارات المتعلقة بالخصوصية، راسلنا على <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>.`,
+    footer: `© 2025 ${APP_NAME}. جميع الحقوق محفوظة.`
+  }
+};
+
+/** ====== Helpers: render text & lists ====== */
+function setLanguage(lang){
+  const map = {
+    "zh-TW":"zh-Hant","zh-HK":"zh-Hant","zh-MO":"zh-Hant",
+    "zh":"zh-Hans","zh-CN":"zh-Hans","zh-SG":"zh-Hans",
+    "pt-BR":"pt","pt-PT":"pt","es-419":"es","ar-SA":"ar"
+  };
+  lang = map[lang] || lang;
+  if(!I18N[lang]) lang = "en";
+  const t = I18N[lang];
+
+  // dir for Arabic
+  document.documentElement.lang = lang;
+  document.documentElement.dir = (lang === "ar") ? "rtl" : "ltr";
+
+  // text nodes
+  const ids = [
+    "title","langLabel","lastUpdatedLabel","intro_title","intro_body","scope_title","scope_body",
+    "collect_title","use_title","share_title","retention_title","retention_body",
+    "permissions_title","tracking_title","tracking_body","rights_title","children_title","children_body",
+    "security_title","security_body","transfer_title","transfer_body","changes_title","changes_body",
+    "contact_title","contact_body","footer"
+  ];
+  ids.forEach(id=>{
+    if(document.getElementById(id)) document.getElementById(id).innerHTML = t[id] || "";
+  });
+
+  // app badge and last updated value
+  document.getElementById("appBadge").textContent = APP_NAME;
+  document.getElementById("lastUpdatedValue").textContent = LAST_UPDATED_ISO;
+
+  // lists
+  const lists = [
+    ["collect_list","collect_list"],
+    ["use_list","use_list"],
+    ["share_list","share_list"],
+    ["permissions_list","permissions_list"],
+    ["rights_list","rights_list"]
+  ];
+  lists.forEach(([id,key])=>{
+    const el = document.getElementById(id);
+    if(!el) return;
+    el.innerHTML = "";
+    (t[key] || []).forEach(item=>{
+      const li = document.createElement("li");
+      li.innerHTML = item;
+      el.appendChild(li);
+    });
+  });
+
+  // update select value without firing change loop
+  const select = document.getElementById("lang");
+  if(select.value !== lang) select.value = lang;
+}
+
+(function init(){
+  // populate default UI
+  setLanguage("en");
+  // pick best language from browser
+  const navLangs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || "en"];
+  for(const l of navLangs){
+    const base = l.split("-")[0];
+    const candidates = [l, base === "zh" ? "zh-Hans" : base];
+    const found = candidates.find(c => I18N[c]);
+    if(found){ setLanguage(found); break; }
+  }
+  // wire selector
+  document.getElementById("lang").addEventListener("change", e => setLanguage(e.target.value));
+})();
+</script>
+</body>
+</html>
